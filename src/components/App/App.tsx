@@ -47,12 +47,12 @@ export default function App() {
           containerClassName={css.pagination}
           activeClassName={css.active}
           breakLabel="..."
-          nextLabel=">"
-          previousLabel="<"
+          nextLabel="→"
+          previousLabel="←"
           onPageChange={({ selected }) => setPage(selected + 1)}
           forcePage={page - 1}
           pageRangeDisplayed={5}
-          marginPagesDisplayed={3}
+          marginPagesDisplayed={1}
           pageCount={totalPages}
           renderOnZeroPageCount={null}
         />
